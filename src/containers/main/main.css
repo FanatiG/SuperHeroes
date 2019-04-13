@@ -1,0 +1,213 @@
+
+
+#main {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  background: linear-gradient(180deg, #31333B 13.26%, #363945 74.59%, #2B2D35 100%);
+}
+
+
+.App-body {
+  padding: 0px 12px;
+  /* height: 100%; */
+}
+
+@media (max-width: 320px) {
+  .App-body {
+    padding: 0px 16px;
+    background: linear-gradient(180deg, #31333B 13.26%, #363945 74.59%, #2B2D35 100%);
+
+  }
+}
+@media (min-width: 768px) {
+  .App-body {
+    margin-right: 46px;
+    padding-right: 0px;
+  }
+  }
+.search-body {
+  display: flex;
+  align-items: center;
+  height: 89px;
+  /* justify-content: center; */
+  width: 100%;
+  
+}
+.searchBar {
+  display: flex;
+  padding: 0px;
+  padding-left: 14px;
+  min-height: 56px;
+  max-height: 56px;
+  /* width: calc(100vw - 32px); */
+  /* margin: 16px; */
+  border: 0px;
+  background: #4B4E5C;
+  /* background: transparent; */
+  border-radius: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #FFFFFF;
+  width: 100%;
+  position: relative;
+  /* z-index: 1; */
+}
+@media (min-width: 767px) {
+  .searchBar {
+    max-width: 336px;
+  }
+}
+.searchBar::placeholder {
+  color: #FFFFFF;
+}
+.searchBar:focus {
+  outline: none;
+}
+.searchImage {
+  min-width: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  margin-left: -40px;
+  vertical-align: middle;
+  background-size: contain;
+  background-image: url("../../img/search-24.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+/*-------------------------------------------------------------------------------------------------*/
+.chooseHeroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-content: space-between; */
+  /* align-content: center; */
+  /* align-items: center; */
+  /* position: relative; */
+  /* padding: 0px 14px; */
+  padding-bottom: 89px;
+}
+/* @media (max-width: 320px) {
+  html {
+    height: calc(100% + 89px);
+  }
+  .chooseHeroes {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding-bottom: 89px;    
+  }
+} */
+/* @media (max-width: 600px){ */
+  .cardFrame {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: auto;
+  /* margin: 0px 8px; */
+  margin-bottom: 16px;
+  height: 130px;
+  width: 72px;
+}
+/* @media (max-width: 320px) {
+  .cardFrame {
+    max-width: 64px;
+  }
+} */
+/* } */
+
+.heroCard {
+  display: flex;
+  /* flex: 0 0 0; */
+  color: #FFFFFF;
+  min-height: 100px;
+  max-height: 100px;
+  min-width: 72px;
+  max-width: 72px;
+  border-radius: 8px;
+  /* margin: calc(1vh + 13px) calc(1vw - 1px); */
+}
+@media (max-width: 320px) {
+  .heroCard {
+    display: flex;
+    /* flex: 0 0 0; */
+    color: #FFFFFF;
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 64px;
+    max-width: 64px;
+    border-radius: 8px;
+    /* margin: calc(1vh + 13px) calc(1vw - 1px); */
+  }
+  .cardFrame {
+    width: 64px;
+  }
+  }
+.heroName {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+  color: #FFFFFF;  
+  min-width: 64px;
+  max-width: 72px;
+}
+/*-------------------------------------------------------------------------------------------------*/
+/* .chooseUniverse {
+  display: inline-flex;
+  align-items: center;
+  min-height: 89px;
+  max-height: 89px;
+  width: 100vw;
+  margin: 0px -16px;
+
+  // bottom: 0px;
+  // position: fixed;
+  // z-index: 10;
+
+  background-color: #31333D;
+} */
+/* @media(max-width: 320px) {
+  .chooseUniverse {
+    margin: 0 -16px;
+  }
+} */
+.dcImage {
+  margin-right: 15px;
+  min-height: 75px;
+  max-height: 75px;
+  min-width: 120px;
+  max-width: 120px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("../../img/dc.png");
+}
+.marvelImage {
+  margin-left: 15px;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 111px;
+  max-width: 111px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("../../img/marvel.png");
+}

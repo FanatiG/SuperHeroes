@@ -1,0 +1,86 @@
+{
+  "dc": [
+    {
+      "name": "Аквамен",
+      "image": "http://www.ramrus.ru/pic/dc/aquaman.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Бэтмен",
+      "image": "http://www.ramrus.ru/pic/dc/batman.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Киборг",
+      "image": "http://www.ramrus.ru/pic/dc/cyborg.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Флэш",
+      "image": "http://www.ramrus.ru/pic/dc/flash.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Зелёный Фонарь",
+      "image": "http://www.ramrus.ru/pic/dc/greenlantern.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Супергёрл",
+      "image": "http://www.ramrus.ru/pic/dc/supergirl.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Супермен",
+      "image": "http://www.ramrus.ru/pic/dc/superman.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Чудо-женщина",
+      "image": "http://www.ramrus.ru/pic/dc/wonderwoman.jpg",
+      "counter": 0
+    }
+  ],
+  "marvel": [
+    {
+      "name": "Чёрная Пантера",
+      "image": "http://www.ramrus.ru/pic/marvel/blackpanther.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Капитан Америка",
+      "image": "http://www.ramrus.ru/pic/marvel/captainamerica.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Сорвиголова",
+      "image": "http://www.ramrus.ru/pic/marvel/daredevil.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Доктор Стрэндж",
+      "image": "http://www.ramrus.ru/pic/marvel/doctorstrange.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Халк",
+      "image": "http://www.ramrus.ru/pic/marvel/hulk.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Железнй Человек",
+      "image": "http://www.ramrus.ru/pic/marvel/ironman.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Человек-паук",
+      "image": "http://www.ramrus.ru/pic/marvel/spiderman.jpg",
+      "counter": 0
+    },
+    {
+      "name": "Тор",
+      "image": "http://www.ramrus.ru/pic/marvel/thor.jpg",
+      "counter": 0
+    }
+  ]
+}
