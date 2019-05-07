@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './header.css';
 import './main.css';
 import Superheroes from '../../superheroes.json';
 
@@ -25,7 +24,14 @@ const chooseUniverseRight = {
   width: '100vw',
   backgroundColor: 'transparent'
 };
-
+// window.addEventListener("orientationchange", function() {
+//   if(window.orientation == 90) {
+//     document.getElementById('main').setAttribute("style","height:'content'");
+//   }
+//   if(window.orientation == 0) {
+//     document.getElementById('main').setAttribute("style","height:100%");
+//   }
+// }, false);
 function removeChildren() {
   document.getElementsByClassName('searchBar')[0].value = '';
   var container = document.getElementsByClassName('chooseHeroes')[0];
@@ -174,74 +180,54 @@ function searchHero() {
                 &&
                 document.getElementsByClassName("cardFrame")[i].id.charAt(tempI-2).toLowerCase() == inpt.charAt(tempI-2).toLowerCase()
               ){
-                document.getElementsByClassName("cardFrame")[i].style.visibility='visible'
-                document.getElementsByClassName("cardFrame")[i].style.position ='relative'
-                document.getElementsByClassName("cardFrame")[i].style.justifyContent ='flex-start'
-                document.getElementsByClassName("cardFrame")[i].style.marginLeft ='4px'
-                document.getElementsByClassName("cardFrame")[i].style.marginRight ='4px'
+                document.getElementsByClassName("cardFrame")[i].style.visibility = 'visible';
+                document.getElementsByClassName("cardFrame")[i].style.position = 'relative';
+                document.getElementsByClassName("cardFrame")[i].style.justifyContent ='flex-start';
+                document.getElementsByClassName("cardFrame")[i].style.marginLeft = '4px';
+                document.getElementsByClassName("cardFrame")[i].style.marginRight = '4px';
               } else {
-                document.getElementsByClassName("cardFrame")[i].style.visibility='hidden'
-                document.getElementsByClassName("cardFrame")[i].style.position='absolute'
+                document.getElementsByClassName("cardFrame")[i].style.visibility = 'hidden';
+                document.getElementsByClassName("cardFrame")[i].style.position = 'absolute';
               };
             };
           if(inpt == '')
-          {document.getElementsByClassName("cardFrame")[i].style.visibility='visible'
-          document.getElementsByClassName("cardFrame")[i].style.position='relative'
-          document.getElementsByClassName("cardFrame")[i].style.margin ='auto'
+          {document.getElementsByClassName("cardFrame")[i].style.visibility = 'visible';
+          document.getElementsByClassName("cardFrame")[i].style.position = 'relative';
+          document.getElementsByClassName("cardFrame")[i].style.margin = 'auto';
         };
           i++;
         });
 };
 
 class Main extends Component {
-
 constructor(props) 
 {
   super(props);
-  var width = window.innerWidth;
   this.state = {};
-  if (width > 767) {
     this.state.renderComponent = (
       <div className="container">
         <div className="App-header" id="App-header">
           <p className="emptyText">Выберите героя</p>
           <div className="shadowRight"></div>
         </div>
-        <div className="App-body">
+        <div className="App-body" id="App-body">
           <div className="search-body">
             <input type="search" onInput={searchHero} className="searchBar" placeholder="Имя героя"></input>
             <div className="searchImage"></div>
-            <div className="chooseUniverse" id="chooseUniverse" style={chooseUniverseRight}>
+            <div className="chooseUniverse" id="chooseUniverseUp" style={chooseUniverseRight}>
               <div className="dcImage" onClick={dcHeroes}></div>
               <div className="marvelImage" onClick={marvelHeroes}></div>
             </div>
           </div>
           <div id="chooseHeroes" className="chooseHeroes"></div>
-        </div>
-      </div>
-    );
-  } else {
-    this.state.renderComponent = (
-      <div className="container">
-      <div className="App-header" id="App-header">
-        <p className="emptyText">Выберите героя</p>
-        <div className="shadowRight"></div>
-      </div>
-        <div className="App-body">
-          <div className="search-body">
-            <input type="search" onInput={searchHero} className="searchBar" placeholder="Имя героя"></input>
-            <div className="searchImage"></div>
-          </div>
-            <div id="chooseHeroes" className="chooseHeroes"></div>
-            <div className="chooseUniverse" id="chooseUniverse" style={chooseUniverseBottom}>
+            <div className="chooseUniverse" id="chooseUniverseDown" style={chooseUniverseBottom}>
               <div className="dcImage" onClick={dcHeroes}></div>
               <div className="marvelImage" onClick={marvelHeroes}></div>
           </div>
-        </div> 
+        </div>
       </div>
     );
-  }
-}
+};
   render() {
     return this.state.renderComponent;
   }

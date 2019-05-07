@@ -113,8 +113,21 @@ if(document.getElementById(elem.name+"Top").childNodes[1].childNodes[0].innerHTM
       i++;
     });
     i = 0;
-  };
+  };  
+function showUniverse() {
+  if(window.innerWidth > 767) {
+    document.getElementById('chooseUniverseDown').style.display = 'none';
+    document.getElementById('chooseUniverseUp').style.display = 'inline-flex';
+  } else {
+    document.getElementById('chooseUniverseUp').style.display = 'none';
+    document.getElementById('chooseUniverseDown').style.display = 'inline-flex';
+    }
+};
+window.addEventListener("resize", function() {  
+  showUniverse();
+}, false);
 window.onload = function(){
+  showUniverse()
   setTimeout(function(){
     dcHeroes();
     hideIt();
