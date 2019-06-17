@@ -1,8 +1,8 @@
-## draft project ##
+## DRAFT PROJECT ##
+____________________
 
 
-
-Напоминалка по реакту.
+## Напоминалка по реакту.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
